@@ -1,0 +1,43 @@
+body
+{
+    background-color: #ffffff;
+    /* 
+    background-image: url('../maintenanceBackground.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    position: relative;
+    */
+}
+
+.main-content
+{
+    text-align: center;
+}
+
+.main-content img
+{
+    max-width: 50%;
+    height: auto;
+    width: auto
+}
+
+@font-face
+{
+    font-family: myFontGreeting;
+    src: url(../fonts/Greeting.otf);
+}
+
+.main-content h1
+{
+    font-family: myFontGreeting;
+    font-size: 50px;
+    color:  #61B2EA;
+}
+
+.main-content h2
+{
+    font-family: myFontGreeting;
+    font-size: 50px;
+    color: #F8C44E;
+}

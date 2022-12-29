@@ -1,0 +1,98 @@
+.center
+{
+    text-align: center;
+    display: block;
+}
+
+.img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.containerC
+{
+    position: absolute;
+    border: 3px solid #f1f1f1;
+    top: 50%;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: -1;
+}
+
+.text
+{
+    color: black;
+    font-weight: bold;
+}
+
+.icon
+{
+    background-color:none;
+    max-width: 50px;
+}
+
+.icon:hover
+{
+    box-shadow: 0 0px 20px white;
+    background-color: white;
+    transition: box-shadow 0.3s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
+}
+
+@keyframes example
+{
+    0%      {box-shadow: 0px 0px 5px #61B2EA;}
+    10%      {box-shadow: 0px 0px 10px #61B2EA;}
+    20%      {box-shadow: 0px 0px 15px #61B2EA;}
+    30%      {box-shadow: 0px 0px 20px #61B2EA;}
+    40%      {box-shadow: 0px 0px 25px #61B2EA;}
+    50%      {box-shadow: 0px 0px 30px #61B2EA;}
+    60%      {box-shadow: 0px 0px 15px #61B2EA;}
+    70%      {box-shadow: 0px 0px 12px #61B2EA;}
+    80%      {box-shadow: 0px 0px 10px #61B2EA;}
+    90%      {box-shadow: 0px 0px 8px #61B2EA;}
+    100%    {box-shadow: 0px 0px 6px #61B2EA;}
+}
+
+.bg
+{
+    /* Parallax  */
+    background: url("../nyc.jpg") no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.bg1
+{
+    background: url("../city.jpg") no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.emailButton
+{
+    width: 40%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+
+.emailButton:hover span
+{
+    display: none;
+    background-color: white;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.emailButton:hover::before
+{
+    content: "Email Me!";
+}
