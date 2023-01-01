@@ -8,12 +8,11 @@
         <link rel="stylesheet" href="/static/css/style.css">
         <link rel="shortcut icon" href="/static/favicon.ico">
         
-    <title>Site Maintenance</title>
-    <link rel="stylesheet" href="/static/css/mstyle.css">
-
     </head>
     
-    <body >
+    <body 
+class="bg1"
+>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button
                 class="navbar-toggler"
@@ -46,14 +45,164 @@
         </nav>
         
         
-    <div class='main-content'>
-        <h1>Hi There!</h1>
-        <p>This part of the website is currently undergoing maintenance.</p>
-        <p>Please check back later to see the new changes!</p>
-        <img src=/static/maintenanceBackgroundCrop.jpg alt="ConstructionError">
-        <p></p>
-        <h2>See you soon!</h2>
+<script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Show more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Show less"; 
+        moreText.style.display = "inline";
+      }
+    }
+</script>
+
+<div class="container containerR">
+    <div class="row">
+        <a id="projects"></a>
+        <h1>Projects</h1>
     </div>
+    <div class="row">
+        <div class="col">
+            <div class="card cardR" style="width: 18rem;">
+                <img class="card-img-top" src=/static/DinoChase.png alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Dino Chase</h5>
+                  <p class="card-text">Used object oriented design principles to create a two player Pacman inspired game in C++.</p>
+                  <a href="https://github.com/AndFang/2PlayerPacMan" class="btn btn-primary">Check it out</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card cardR" style="width: 18rem;">
+                <img class="card-img-top" src=/static/2048AI.png alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">2048 AI</h5>
+                  <p class="card-text">Used image recognization and uninformed search techniques to create an algorithm that plays 2048 effectively.</p>
+                  <a href="https://github.com/AndFang/2048AI" class="btn btn-primary">Check it out</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card cardR" style="width: 18rem;">
+                <img class="card-img-top" src=/static/Website.png alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Personal Website</h5>
+                  <p class="card-text">Used the Flask and Bootstrap packages to create a personal website.</p>
+                  <p class="card-text">You're currently on it!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <span id="dots"></span>
+
+    <span id="more">
+        <div class="row">
+            <div class="col">
+                <div class="card cardR" style="width: 18rem;">
+                    <img class="card-img-top" src=/static/CH.jpg alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Convex Hull</h5>
+                    <p class="card-text">Computes the convex hull of a set of points using two algorithms (Divide and Conquer, Jarvis March).</p>
+                    <a href="https://github.com/AndFang/ConvexHull" class="btn btn-primary">Check it out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card cardR" style="width: 18rem;">
+                    <img class="card-img-top" src=/static/MIS.jpg alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Medical Information System</h5>
+                    <p class="card-text">Database program for a medical information system. Able to manipulate database through the use of a GUI.</p>
+                    <a href="https://github.com/AndFang/MedicalInformationSystem" class="btn btn-primary">Check it out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card cardR" style="width: 18rem;">
+                    <img class="card-img-top" src=/static/seam.jpg alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Best Seam</h5>
+                    <p class="card-text">Finds the best seam (using Dynamic Programming) in an image and contains GUI that demonstrates the application of it on any chosen image.</p>
+                    <a href="https://github.com/AndFang/BestSeam" class="btn btn-primary">Check it out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </span>
+
+    <button onclick="myFunction()" id="myBtn" class="btn btn-secondary">Show more</button>
+</div>
+
+<div class="container containerR">
+    <div class="row">
+        <div class="text">
+            <a id="experience"></a>
+            <h1>Experience</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-3">
+            <a href="https://www.bnymellon.com/">
+                <img src=/static/bny.png class="rounded img-fluid w-80">
+            </a>
+        </div>
+        <div class="col-xl-9">
+            <h3 class="card-title">BNY Mellon</h3>
+            <p>START Technology Intern</p>
+            <p>Summer 2023</p>
+            <p style="text-align: left;">Incoming.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-3">
+            <a href="https://uconn.edu/">
+                <img src=/static/uconn.png class="rounded img-fluid w-80">
+            </a>
+        </div>
+        <div class="col-xl-9">
+            <h3 class="card-title">University of Connecticut</h3>
+            <p>Teaching Assistant</p>
+            <p>Spring 2022, Fall 2022, Spring 2023</p>
+            <p style="text-align: left;">Assisted students in a system programming course. Taught weekly laboratory sections and held office hours throughout the semester.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-3">
+            <a href="https://www.bentley.com/">
+                <img src=/static/bentley.png class="rounded img-fluid w-80">
+            </a>
+        </div>
+        <div class="col-xl-9">
+            <h3 class="card-title">Bentley Systems</h3>
+            <p>Software Developer Intern</p>
+            <p>Summer 2022</p>
+            <p style="text-align: left;">Worked along side an agile development team (SewerGEMS) to deliver on customer requests for the civil engineer software.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-3">
+            <a href="https://kencast.com/">
+                <img src=/static/kc.png class="rounded img-fluid w-80">
+            </a>
+        </div>
+        <div class="col-xl-9">
+            <h3 class="card-title">KenCast Inc.</h3>
+            <p>Software Intern</p>
+            <p>Summer 2020, Summer 2021</p>
+            <p style="text-align: left;">Undertook software engineering of wireless broadcast systems for entertainment and emergency services.</p>
+        </div>
+    </div>
+</div>
+
+
 
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
