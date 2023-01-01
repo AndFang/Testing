@@ -27,18 +27,40 @@
     background-color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.75);
     z-index: -1;
+    animation: fadeIn 2s;
+}
+
+.containerR
+{
+    border: 3px solid #f1f1f1;
+    z-index: 2;
+    width: 80%;
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: -1;
+    animation: fadeIn 2s;
+    margin-top: 50px;
 }
 
 .text
 {
     color: black;
     font-weight: bold;
+    
 }
 
 .icon
 {
     background-color:none;
     max-width: 50px;
+}
+
+@keyframes fadeIn
+{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .icon:hover
@@ -95,4 +117,30 @@
 .emailButton:hover::before
 {
     content: "Email Me!";
+}
+
+#more {display: none;}
+
+.cardR
+{
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+    height: 100%;
+    border: 3px solid black;
+    padding: 1vw;
+}
+
+.card-img-top {
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row
+{
+    padding: 1vw;
 }
