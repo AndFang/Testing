@@ -8,12 +8,11 @@
         <link rel="stylesheet" href="/static/css/style.css">
         <link rel="shortcut icon" href="/static/favicon.ico">
         
-    <title>Site Maintenance</title>
-    <link rel="stylesheet" href="/static/css/mstyle.css">
-
     </head>
     
-    <body >
+    <body 
+class="bg1"
+>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button
                 class="navbar-toggler"
@@ -46,14 +45,27 @@
         </nav>
         
         
-    <div class='main-content'>
-        <h1>Hi There!</h1>
-        <p>This part of the website is currently undergoing maintenance.</p>
-        <p>Please check back later to see the new changes!</p>
-        <img src=/static/maintenanceBackgroundCrop.jpg alt="ConstructionError">
-        <p></p>
-        <h2>See you soon!</h2>
+
+<div class="container containerR">
+    <div class="row">
+        <div class="text">
+            <h1>LeetCode</h1>
+        </div>
     </div>
+    <div class="row">
+        <div class="col-xl-4" style="padding: 1vw;">
+            <img src=/static/lc.png class="rounded img-fluid w-80">
+        </div>
+        <div class="col-xl-8" style="padding: 1vw;">
+            <p>
+                <img src="https://leetcode-stats.vercel.app/api?username=AndFang&amp;theme=Light">
+            </p>
+            <a href="https://leetcode.com/AndFang/" class="btn btn-secondary">View Profile</a>
+        </div>
+    </div>
+</div>
+
+
 
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
