@@ -18,7 +18,18 @@
     <body 
 class="bg1"
 >
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <script>
+        function nbBackground() {
+            var element = document.getElementById("nb");
+
+            if (element.classList.contains("bg-light"))
+                element.classList.remove("bg-light");
+            else
+                element.classList.add("bg-light");
+        } 
+        </script>
+
+        <nav class="navbar navbar-expand-lg navbar-light" id="nb">
             <button
                 class="navbar-toggler"
                 type="button"
@@ -27,6 +38,7 @@ class="bg1"
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
+                onclick="nbBackground()"
             >
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,17 +62,17 @@ class="bg1"
         </nav>
         
         
-    <object data="/static/Resume.pdf"
-        type="application/pdf" style="min-height:100vh;width:100%; background-color: white;">
-    </object>
+<object data="/static/Resume.pdf"
+    type="application/pdf" style="min-height:100vh;width:100%; background-color: white;">
+</object>
 
-    <div class="container" style="padding: 5vh;">
-        <div class="row center">
-            <a href="mailto:andrew.fang@uconn.edu" target="_blank" class="btn btn-light emailButton">
-                <span><i class="fa fa-envelope"></i></span>
-            </a>
-        </div>
+<div class="container" style="padding: 5vh;">
+    <div class="row center">
+        <a href="mailto:andrew.fang@uconn.edu" target="_blank" class="btn btn-light emailButton">
+            <span><i class="fa fa-envelope"></i></span>
+        </a>
     </div>
+</div>
 
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

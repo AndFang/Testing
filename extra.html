@@ -18,7 +18,18 @@
     <body 
 class="bg1"
 >
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <script>
+        function nbBackground() {
+            var element = document.getElementById("nb");
+
+            if (element.classList.contains("bg-light"))
+                element.classList.remove("bg-light");
+            else
+                element.classList.add("bg-light");
+        } 
+        </script>
+
+        <nav class="navbar navbar-expand-lg navbar-light" id="nb">
             <button
                 class="navbar-toggler"
                 type="button"
@@ -27,6 +38,7 @@ class="bg1"
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
+                onclick="nbBackground()"
             >
             <span class="navbar-toggler-icon"></span>
             </button>
